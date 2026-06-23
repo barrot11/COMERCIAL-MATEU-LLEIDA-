@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1A2E4A;
+  --color-brand-blue-dark: #0D1F33;
+  --color-brand-orange: #E8541A;
+  --color-brand-orange-dark: #B53E12;
+  --color-brand-bg: #F7F5F2;
+  --color-brand-dark: #1C1C1C;
+  --color-brand-muted: #8A8A8A;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", sans-serif;
+}
+
+/* Common application overrides */
+html {
+  scroll-behavior: smooth;
+  background-color: #F7F5F2;
+  color: #1C1C1C;
+  font-family: var(--font-sans);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Base custom classes for high craftsmanship dividers */
+.industrial-divider {
+  height: 1px;
+  background: linear-gradient(to right, rgba(26, 46, 74, 0.1) 0%, rgba(26, 46, 74, 0.4) 50%, rgba(26, 46, 74, 0.1) 100%);
+  border: none;
+}
+
+.industrial-divider-orange {
+  height: 2px;
+  background: #E8541A;
+  width: 60px;
+  border: none;
+}
+
+/* Theme Design CSS rules */
+.theme-card {
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-color: rgba(26, 46, 74, 0.15);
+}
+
+.theme-pill {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.theme-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-left: 3px solid #E8541A;
+  transition: all 0.2s ease;
+}
+
+.theme-stat-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.theme-hero-gradient {
+  background: linear-gradient(135deg, #1A2E4A 0%, #0D1F33 100%);
+}
